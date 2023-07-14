@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>ProjetoMVP1</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>ClientesPagantes_ImpostoDeRenda</h2>
+        </div>
+        <div class="banner">
+            <img src="D:\PUC_Rio_Desenvolvimento\MVP\MVP_Teste2\meu_app_front\img\ImpDeRenda.jpg"
+                alt="Imagem não encontrada">
+        </div>
+    </header>
+
+     <!-- Opções para adicionar um novo item -->
+    <section class="newItem">
+        <input type="text" id="newClient" placeholder="Nome do Cliente:">
+        <input type="text" id="newCPF" placeholder="Número do CPF:">
+        <input type="text" id="newValor" placeholder="Valor Pago:">
+        <span onclick="newItem()" class="addBtn">Incluir_Cliente</span>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Valor</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="20px" height="20px"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+
